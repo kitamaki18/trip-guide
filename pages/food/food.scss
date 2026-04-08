@@ -1,0 +1,134 @@
+@use "../../style/abstracts/variables" as *;
+@use "../../style/abstracts/functions" as *;
+
+
+
+
+
+
+
+
+
+/* ============
+food-slide
+============ */
+section#food-slide{
+    margin-bottom: 3rem;
+
+    .contents-slide.slide-infinity1 {
+        margin-bottom: 1rem;
+        .swiper {
+            .swiper-wrapper {
+                transition-timing-function: linear;
+                .swiper-slide {
+                    width: auto;
+                    img {
+                        height: 9rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        &.reverse {
+            margin-bottom: 3rem;
+            .swiper{
+                .swiper-wrapper {
+                    animation-direction: reverse;
+                }
+            }
+        }
+    }//contents-slide.slide-infinity1
+}
+
+
+
+/* ============
+food-contents
+============ */
+section#food-contents{
+
+    .contents-column.column02-01-2 .contents-column__item.is-hidden {
+        display: none;
+    }
+
+    .btn__area{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-bottom: 5rem;
+        .btn2{
+            width: 100%;
+            a{
+                width: 100%;
+                font-size: 0.9rem;
+                padding: 1rem 0;
+            }
+            &::after{
+                top: 1.4rem;
+                right: 0;
+                transform: rotate(135deg);
+            }
+            &.is-active{
+                border-bottom: solid 1px $color-main;
+                a{
+                    font-weight: 700;
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    top: 1.7rem;
+                }
+            }
+        }
+    }//btn__area
+
+
+    .contents-column {
+        margin-bottom: 3rem;
+        &.column02-01-2 {
+            .contents-column__item {
+                position: relative;
+                display: grid;
+                align-items: center;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                margin-bottom: 2rem;
+
+                &:nth-child(even) {
+                    .contents-column__border {
+                        left: calc(50% + 2rem);
+                        width: calc(50% - 2rem);
+                    }
+
+                    .contents-column__image {
+                        order: 1;
+                    }
+
+                    .contents-column__text {
+                        order: 2;
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .contents-column__image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .contents-column__text-title {
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: $color-primary;
+                line-height: 1.2;
+            }
+
+            .contents-column__excerpt {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+}

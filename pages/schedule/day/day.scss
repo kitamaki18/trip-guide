@@ -1,0 +1,119 @@
+@use "../../../style/abstracts/variables" as *;
+@use "../../../style/abstracts/functions" as *;
+
+
+/* ============
+day-timeline
+============ */
+section#day-timeline{
+    margin-bottom: 3rem;
+    .contents-timeline.timeline01-1 {
+        .timeline {
+            &-list {
+                padding: 2.5rem 0;
+
+                &-item {
+                    display: flex;
+                    line-height: 1.5;
+
+                    .date {
+                        width: 6.875rem;
+                        padding: 1rem 0 0 0;
+                        font-weight: 500;
+                        p {
+                            font-size: 1.2rem;
+                            letter-spacing: 0;
+                        }
+                    }
+
+                    .content {
+                        position: relative;
+                        width: 80%;
+                        padding: 1rem 1.25rem 1.75rem 1.875rem;
+                        border-left: 0.0625rem solid $color-primary;
+
+                        p {
+                            border-bottom: 0.0625rem dashed $color-primary;
+                            font-size: 1.2rem;
+                            padding: 0 0 1rem;
+
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 1.5625rem;
+                            left: -0.46875rem;
+                            width: 0.7375rem;
+                            height: 0.7375rem;
+                            background-color: $color-primary;
+                            border-radius: 0.625rem;
+
+                        }
+                    }
+                }
+            }
+        }
+    }//contents-timeline.timeline01-1
+}
+
+
+/* ============
+day-contents
+============ */
+section#day-contents{
+    .contents{
+
+        &__item{
+            margin-bottom: 7rem;
+            &--img{
+                img{
+                    width: 100%;
+                }
+            }
+            &--text{
+                margin-top: 1rem;
+                .time-title{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+                .time{
+                    font-size: rem(36);
+                    color: $color-primary;
+                    font-weight: 700;
+                    font-family: $font-en2;
+                }
+                .title{
+                    font-size: rem(26);
+                }
+                .desc{
+                    margin-top: 3rem;
+                    text-align: center;
+                }
+            }
+            &--lists{
+                margin: 3.5rem 0 2rem;
+                .list{
+                    display: flex;
+                    border-bottom: dashed 1px $color-main;
+                    padding: 1rem 0;
+
+                    &:first-child {
+                        border-top: dashed 1px $color-main;
+                    }
+
+                    .title{
+                        width: 20%;
+                        line-height: 1.5;
+                    }
+                    .desc{
+                        width: 75%;
+                        margin-left: 5%;
+                        line-height: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}

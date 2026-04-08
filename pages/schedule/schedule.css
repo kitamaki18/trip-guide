@@ -1,0 +1,80 @@
+/* ============
+schedule-contents
+============ */
+section#schedule-contents {
+  margin-top: 4rem;
+}
+section#schedule-contents .contents-visual.visual12-1 {
+  position: relative;
+  width: 100%;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__gap {
+  height: 10vh;
+  background-color: transparent;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #DFF6FA;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-wrap {
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-text {
+  position: absolute;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  z-index: 10;
+  padding: 0 3.5%;
+  color: #fff;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-text .visual12__item-title {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-text .visual12__item-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item-text .btn4 {
+  margin-top: 1.5rem;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item:nth-child(3) .visual12__item-text,
+section#schedule-contents .contents-visual.visual12-1 .visual12__item:nth-child(5) .visual12__item-text {
+  color: #453939;
+}
+section#schedule-contents .contents-visual.visual12-1 .visual12__item:nth-child(3) .visual12__item-text .visual12__item-description,
+section#schedule-contents .contents-visual.visual12-1 .visual12__item:nth-child(5) .visual12__item-text .visual12__item-description {
+  font-weight: 700;
+}
